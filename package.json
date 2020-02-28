@@ -1,0 +1,27 @@
+{
+  "name": "hyper-rose-pine",
+  "version": "1.0.6",
+  "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist.",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hyper",
+    "hyper-theme",
+    "theme",
+    "ui",
+    "terminal",
+    "rose pine",
+    "classy",
+    "dark theme",
+    "subtle",
+    "minimalist",
+    "minimal"
+  ],
+  "author": "fvrests",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fvrests/hyper-rose-pine"
+  }
+}
