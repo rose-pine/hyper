@@ -6,4 +6,14 @@ All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 
 [![](https://img.shields.io/badge/Rosé%20Pine%20Theme-191724)](https://github.com/rose-pine/rose-pine-theme)
 
+### Instructions
+
+Just run
+```sh
+hyper i hyper-rose-pine
+```
+
+### Screenshots 
+
+
 ![Preview](assets/preview.png)
