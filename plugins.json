@@ -1,7 +1,7 @@
 {
   "name": "hyper-rose-pine",
   "type": "theme",
-  "preview": "",
+  "preview": "https://github.com/fvrests/hyper-rose-pine/raw/master/assets/preview.png",
   "colors": [
     "#191724",
     "#706e86",
@@ -12,5 +12,6 @@
     "#31748f",
     "#9ccfd8",
     "#c4a7e7"
-  ]
+  ],
+  "dateAdded": "1582919913142"
 }
