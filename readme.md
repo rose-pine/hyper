@@ -1,6 +1,6 @@
 <img src="https://github.com/rose-pine/rose-pine-theme/blob/master/assets/icon.png" width="64" />
 
-# Rosé Pine
+# Rosé Pine for Hyper
 
 All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 
@@ -14,4 +14,4 @@ hyper i hyper-rose-pine
 
 ## Screenshots
 
-![Preview](assets/preview.png)
+![Hyper with Rosé Pine](assets/preview.png)
