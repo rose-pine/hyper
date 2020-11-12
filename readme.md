@@ -15,5 +15,4 @@ hyper i hyper-rose-pine
 
 ### Screenshots 
 
-
 ![Preview](assets/preview.png)
