@@ -9,7 +9,16 @@ All natural pine, faux fur and a bit of soho vibes for the classy minimalist.
 ## Usage
 
 ```sh
-hyper i hyper-rose-pine
+$ hyper i hyper-rose-pine
+```
+
+or
+
+```js
+// ~/.hyper.js
+module.exports = {
+  plugins: [ "hyper-rose-pine" ]
+}
 ```
 
 ## Screenshots
