@@ -21,11 +21,31 @@ or
 
 ```js
 // ~/.hyper.js
-module.exports = {
-  plugins: [ "hyper-rose-pine" ]
+plugins: ["hyper-rose-pine"],
+```
+
+## Options
+
+```js
+config: {
+	theme: {
+		// Default: base
+		// Can be base, moon or dawn
+		variant: 'dawn',
+	}
 }
 ```
 
 ## Gallery
 
+**Rosé Pine**
+
 ![Hyper with Rosé Pine](assets/preview.png)
+
+**Rosé Pine Moon**
+
+![Hyper with Rosé Pine Moon](assets/preview-moon.png)
+
+**Rosé Pine Dawn**
+
+![Hyper with Rosé Pine Dawn](assets/preview-dawn.png)
