@@ -6,6 +6,9 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "release": "npx np --no-publish"
+  },
   "keywords": [
     "hyper",
     "hyper-theme",
