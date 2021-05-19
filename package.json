@@ -20,8 +20,11 @@
     "minimal"
   ],
   "author": "fvrests",
+  "contributors": [
+    "Hai Nguyen <github@ng-hai.dev>"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/fvrests/hyper-rose-pine"
+    "url": "https://github.com/rose-pine/hyper"
   }
 }
