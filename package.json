@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "release": "npx np --no-publish"
+    "release": "npx np --no-publish --no-tests"
   },
   "keywords": [
     "hyper",
