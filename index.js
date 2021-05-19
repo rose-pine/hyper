@@ -1,28 +1,90 @@
-const colors = {
-  black: "#706e86",
-  lightBlack: "#706e86",
-  white: "#e0def4",
-  lightWhite: "#e0def4",
-  blue: "#31748f",
-  lightBlue: "#31748f",
-  cyan: "#ebbcba",
-  lightCyan: "#ebbcba",
-  green: "#9ccfd8",
-  lightGreen: "#9ccfd8",
-  magenta: "#c4a7e7",
-  lightMagenta: "#c4a7e7",
-  red: "#eb6f92",
-  lightRed: "#eb6f92",
-  yellow: "#f6c177",
-  lightYellow: "#f6c177"
-};
-exports.decorateConfig = config =>
-  Object.assign({}, config, {
+function getVariantPalette(variant = "base") {
+  let palette = {
+    base: {
+      base: "#191724",
+      surface: "#1f1d2e",
+      overlay: "#26233a",
+      inactive: "#555169",
+      subtle: "#6e6a86",
+      text: "#e0def4",
+      love: "#eb6f92",
+      gold: "#f6c177",
+      rose: "#ebbcba",
+      pine: "#31748f",
+      foam: "#9ccfd8",
+      iris: "#c4a7e7",
+      highlight: "#2a2837",
+      highlight_inactive: "#211f2d",
+      highlight_overlay: "#3a384a",
+    },
+    moon: {
+      base: "#232136",
+      surface: "#2a273f",
+      overlay: "#393552",
+      inactive: "#59546d",
+      subtle: "#817c9c",
+      text: "#e0def4",
+      love: "#eb6f92",
+      gold: "#f6c177",
+      rose: "#ea9a97",
+      pine: "#3e8fb0",
+      foam: "#9ccfd8",
+      iris: "#c4a7e7",
+      highlight: "#312f44",
+      highlight_inactive: "#2a283d",
+      highlight_overlay: "#3f3c53",
+    },
+    dawn: {
+      base: "#faf4ed",
+      surface: "#fffaf3",
+      overlay: "#f2e9de",
+      inactive: "#9893a5",
+      subtle: "#6e6a86",
+      text: "#575279",
+      love: "#b4637a",
+      gold: "#ea9d34",
+      rose: "#d7827e",
+      pine: "#286983",
+      foam: "#56949f",
+      iris: "#907aa9",
+      highlight: "#eee9e6",
+      highlight_inactive: "#f2ede9",
+      highlight_overlay: "#e4dfde",
+    },
+  };
+
+  return palette[variant];
+}
+
+exports.decorateConfig = (config) => {
+  let palette = getVariantPalette(config.theme.variant || "base");
+
+  const colors = {
+    black: palette.overlay,
+    lightBlack: palette.subtle,
+    white: palette.text,
+    lightWhite: palette.text,
+    blue: palette.foam,
+    lightBlue: palette.foam,
+    cyan: palette.rose,
+    lightCyan: palette.rose,
+    green: palette.pine,
+    lightGreen: palette.pine,
+    magenta: palette.iris,
+    lightMagenta: palette.iris,
+    red: palette.love,
+    lightRed: palette.love,
+    yellow: palette.gold,
+    lightYellow: palette.gold,
+  };
+
+  return Object.assign({}, config, {
     padding: "12px 30px 30px 30px",
-    backgroundColor: "#191724",
-    foregroundColor: "#e0def4",
-    cursorColor: "#e0def4",
-    selectionColor: "rgba(112, 110, 134, 0.3)",
+    backgroundColor: palette.base,
+    foregroundColor: palette.text,
+    cursorColor: palette.inactive,
+    selectionColor: palette.highlight,
     borderColor: "#0000",
-    colors
+    colors,
   });
+};
