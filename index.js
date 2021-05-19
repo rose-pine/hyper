@@ -85,6 +85,7 @@ exports.decorateConfig = (config) => {
     cursorColor: palette.inactive,
     selectionColor: palette.highlight,
     borderColor: "#0000",
+    css: `.tabs_nav .tabs_title { color: ${palette.text} }`,
     colors,
   });
 };
