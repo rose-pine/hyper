@@ -22,10 +22,78 @@ or
 ```js
 // ~/.hyper.js
 module.exports = {
-  plugins: [ "hyper-rose-pine" ]
+  plugins: ["hyper-rose-pine"],
 }
 ```
 
+## Usage for Hyper Canary
+
+Caution: Below configuration only works with **Hyper 3.1.0-canary.4**, you can download it **[here](https://github.com/vercel/hyper/actions/runs/824537347#artifacts)**.
+
+1. Download or clone this repo into your `~/.hyper_plugin/local`.
+
+2. Add “hyper-rose-pine” into to `localPlugins` array.
+
+   ```js
+   // ~/.hyper.js
+   module.exports = {
+     localPlugins: ["hyper-rose-pine"],
+   }
+   ```
+
+3. (Optional) Theme configuration for supporting Dark Mode
+
+   ```js
+   // ~/.hyper.js
+   module.exports = {
+     config: {
+       hyperRosePine: {
+         appearance: {
+           // Default is "rose-pine"
+           dark: "rose-pine-moon",
+           light: "rose-pine-dawn",
+         },
+         // Default is false
+         hideControls: true,
+       },
+     },
+     localPlugins: ["hyper-rose-pine"],
+   }
+   ```
+
+4. Make a Full Reload, or restart Hyper app to apply changes.
+
 ## Gallery
 
-![Hyper with Rosé Pine](assets/preview.png)
+<details><summary>Rose Pine</summary>
+<p>
+  <img src="./assets/rose-pine-no-tab.jpg" />
+</p>
+<p>
+  <img src="./assets/rose-pine-tab.jpg" />
+</p>
+</details>
+
+<details><summary>Rose Pine Moon</summary>
+<p>
+  <img src="./assets/rose-pine-moon-no-tab.jpg" />
+</p>
+<p>
+  <img src="./assets/rose-pine-moon-tab.jpg" />
+</p>
+</details>
+
+<details><summary>Rose Pine Dawn</summary>
+<p>
+  <img src="./assets/rose-pine-dawn-no-tab.jpg" />
+</p>
+<p>
+  <img src="./assets/rose-pine-dawn-tab.jpg" />
+</p>
+</details>
+
+## FAQs
+
+- Why does Dark Mode only work with Canary version?
+
+  Because the current version (Hyper 3.0.2) is using Chrome 66, which does not support `prefers-color-scheme` feature fully. [Source](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme#browser_compatibility)
