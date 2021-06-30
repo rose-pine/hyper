@@ -94,7 +94,10 @@ exports.decorateConfig = (config) => {
     cursorColor: palette.inactive,
     selectionColor: palette.highlight,
     borderColor: "#0000",
-    css: `.tabs_nav .tabs_title { color: ${palette.text} }`,
+    css: `
+		.tab_text { color: ${palette.subtle} }
+		.tab_textActive { color: ${palette.text} }
+    `,
     colors,
   });
 };
