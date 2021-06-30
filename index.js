@@ -57,7 +57,8 @@ function getVariantPalette(variant = "base") {
 }
 
 exports.decorateConfig = (config) => {
-  let palette = getVariantPalette(config.theme.variant || "base");
+  const variant = (config.theme && config.theme.variant) || "base";
+  const palette = getVariantPalette(variant);
 
   const colors = {
     black: palette.overlay,
