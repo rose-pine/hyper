@@ -29,8 +29,8 @@ plugins: ["hyper-rose-pine"],
 ```js
 config: {
 	theme: {
-		// Default: base
-		// Can be base, moon or dawn
+		// Default: core
+		// Can be core, moon or dawn
 		variant: 'dawn',
 	}
 }
