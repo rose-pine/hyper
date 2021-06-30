@@ -88,7 +88,7 @@ exports.decorateConfig = (config) => {
   };
 
   return Object.assign({}, config, {
-    padding: "12px 30px 30px 30px",
+    padding: config.padding || "12px 30px 30px 30px",
     backgroundColor: palette.base,
     foregroundColor: palette.text,
     cursorColor: palette.inactive,
