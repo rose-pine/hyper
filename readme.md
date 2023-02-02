@@ -32,6 +32,9 @@ config: {
 		// Default: core
 		// Can be core, moon or dawn
 		variant: 'dawn',
+		dawn: {
+		    inactive: '#DFFF00'
+		}
 	}
 }
 ```
