@@ -1,4 +1,4 @@
-let variants = {
+const variants = {
   /**
    * @deprecated Renamed to `core`
    */
@@ -73,7 +73,7 @@ exports.decorateConfig = (config) => {
     Object.keys(config.theme).includes(variant) &&
     typeof config.theme[variant] === 'object'
     ) {
-    for (let param of Object.keys(config.theme[variant])) {
+    for (const param of Object.keys(config.theme[variant])) {
       palette[param] = config.theme[variant][param]
     }
   }
