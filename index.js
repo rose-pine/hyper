@@ -68,6 +68,16 @@ exports.decorateConfig = (config) => {
   const variant = (config.theme && config.theme.variant) || "core";
   const palette = variants[variant];
 
+  if (
+    config.theme && 
+    Object.keys(config.theme).includes(variant) &&
+    typeof config.theme[variant] === 'object'
+    ) {
+    for (const param of Object.keys(config.theme[variant])) {
+      palette[param] = config.theme[variant][param]
+    }
+  }
+
   const colors = {
     black: palette.overlay,
     lightBlack: palette.subtle,
