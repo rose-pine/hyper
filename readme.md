@@ -19,21 +19,26 @@ $ hyper i hyper-rose-pine
 
 or
 
-```js
+```javascript
 // ~/.hyper.js
 plugins: ["hyper-rose-pine"],
 ```
 
 ## Options
 
-```js
+```javascript
 config: {
 	theme: {
-		// Default: core
-		// Can be core, moon or dawn
+		// @usage 'main' | 'moon' | 'dawn'
+        // @default 'main'
 		variant: 'dawn',
+
+        // Optionally, override Rosé Pine palette per variant:
+        // https://rosepinetheme.com/palette
+        main: {},
+        moon: {},
 		dawn: {
-		    inactive: '#DFFF00'
+		    muted: '#dfff00'
 		}
 	}
 }
