@@ -43,12 +43,12 @@ config: {
 
 **Rosé Pine**
 
-![Hyper with Rosé Pine](assets/preview.png)
+![Hyper with Rosé Pine](https://user-images.githubusercontent.com/1474821/216485794-402f4eac-7978-4846-bb6f-527078759b81.png)
 
 **Rosé Pine Moon**
 
-![Hyper with Rosé Pine Moon](assets/preview-moon.png)
+![Hyper with Rosé Pine Moon](https://user-images.githubusercontent.com/1474821/216485807-dc3537e6-a716-415b-b314-1a21eb807fc5.png)
 
 **Rosé Pine Dawn**
 
-![Hyper with Rosé Pine Dawn](assets/preview-dawn.png)
+![Hyper with Rosé Pine Dawn](https://user-images.githubusercontent.com/1474821/216485812-7f098984-e2cf-4ffd-973d-bec615a93128.png)
