@@ -14,13 +14,13 @@
 ## Usage
 
 ```sh
-$ hyper i hyper-rose-pine
+hyper i hyper-rose-pine
 ```
 
 or
 
 ```javascript
-// ~/.hyper.js
+// Hyper config, e.g. ~/.hyper.js
 plugins: ["hyper-rose-pine"],
 ```
 
@@ -30,15 +30,15 @@ plugins: ["hyper-rose-pine"],
 config: {
 	theme: {
 		// @usage 'main' | 'moon' | 'dawn'
-        // @default 'main'
+		// @default 'main'
 		variant: 'dawn',
-
-        // Optionally, override Rosé Pine palette per variant:
-        // https://rosepinetheme.com/palette
-        main: {},
-        moon: {},
+		
+		// Optionally, override Rosé Pine palette per variant
+		// https://rosepinetheme.com/palette
+		main: {},
+		moon: {},
 		dawn: {
-		    muted: '#dfff00'
+			muted: '#dfff00'
 		}
 	}
 }
