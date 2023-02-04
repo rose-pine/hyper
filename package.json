@@ -7,7 +7,7 @@
   "funding": "https://github.com/rose-pine/hyper?sponsor=1",
   "author": "fvrests",
   "scripts": {
-    "release": "npx np --no-publish --no-tests"
+    "release": "npx np@latest --no-tests"
   },
   "files": [
     "index.js"
