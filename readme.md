@@ -19,21 +19,26 @@ $ hyper i hyper-rose-pine
 
 or
 
-```js
+```javascript
 // ~/.hyper.js
 plugins: ["hyper-rose-pine"],
 ```
 
 ## Options
 
-```js
+```javascript
 config: {
 	theme: {
-		// Default: core
-		// Can be core, moon or dawn
+		// @usage 'main' | 'moon' | 'dawn'
+        // @default 'main'
 		variant: 'dawn',
+
+        // Optionally, override Rosé Pine palette per variant:
+        // https://rosepinetheme.com/palette
+        main: {},
+        moon: {},
 		dawn: {
-		    inactive: '#DFFF00'
+		    muted: '#dfff00'
 		}
 	}
 }
@@ -43,12 +48,12 @@ config: {
 
 **Rosé Pine**
 
-![Hyper with Rosé Pine](assets/preview.png)
+![Hyper with Rosé Pine](https://user-images.githubusercontent.com/1474821/216485794-402f4eac-7978-4846-bb6f-527078759b81.png)
 
 **Rosé Pine Moon**
 
-![Hyper with Rosé Pine Moon](assets/preview-moon.png)
+![Hyper with Rosé Pine Moon](https://user-images.githubusercontent.com/1474821/216485807-dc3537e6-a716-415b-b314-1a21eb807fc5.png)
 
 **Rosé Pine Dawn**
 
-![Hyper with Rosé Pine Dawn](assets/preview-dawn.png)
+![Hyper with Rosé Pine Dawn](https://user-images.githubusercontent.com/1474821/216485812-7f098984-e2cf-4ffd-973d-bec615a93128.png)
