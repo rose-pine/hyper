@@ -100,6 +100,7 @@ exports.decorateConfig = (config) => {
     selectionColor: palette.highlightMed,
     borderColor: "#0000",
     css: `
+    ${config.css || ""}
 		.tab_text { color: ${palette.subtle} }
 		.tab_textActive { color: ${palette.text} }
     `,
